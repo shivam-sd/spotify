@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    display: flex;
+}
+.left{
+    width: 400px;
+    /* border: 2px solid red; */
+    margin: 3px;
+   background-color: black;
+   position: relative;
+   
+}
+.right{
+    width: 75%;
+    /* border: 2px solid red; */
+    margin: 3px;
+    padding-top: 2px;
+    position: relative;
+    /* overflow: auto; */
+}
+.home{
+    background-color: rgb(34, 32, 32);
+    border-radius: 5px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+    padding-left: 3vh;
+    /* border: 2px solid red; */
+
+}
+.logo img {
+    width: 40px;
+}
+#spotify{
+    margin-left: 4px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  font-style: normal;
+}
+
+#close{
+    width: 45px;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.home-icon{
+    display: flex;
+    align-items: center;
+    padding: 1.5vh;
+    padding-left: 3vh;
+    gap: 10px;
+    /* border: white 2px solid; */
+}
+.home-icon i{
+    font-size: 23px;
+}
+.home-icon h5{
+    font-size: 18px;
+    /* margin-left: 1.5vh; */
+    margin-top: 1vh;
+}
+
+.search-icon{
+    display: flex;
+    align-items: center;
+    padding: 1.5vh;
+    padding-left: 3vh;
+    gap: 10px;
+    /* border: white 2px solid; */
+}
+.search-icon img{
+    font-size: 2vh;
+}
+.search-icon h5{
+    font-size: 18px;
+    /* margin-left: 1.70vh; */
+    margin-top: 0.5vh;
+}
+.footer-library{
+    /* border: 1px solid white; */
+    padding: 1vh;
+    padding-top: 0.70vh;
+}
+.library{
+    /* border: red 2px solid; */
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.lib{
+    display: flex;
+    align-items: center;
+    /* border: aqua 2px solid; */
+    justify-content: space-between;
+    width: 140px;
+    cursor: pointer;
+}
+.lib img{
+    width: 30px;
+    margin-left: 12px;
+}
+
+.plus img{
+    width: 30px;
+    font-weight: 800;
+    color: gray;
+    cursor: pointer;
+}
+.music-playlist{
+    /* border: 1px solid red; */
+    height: 350px;
+    padding: 2px 2px;
+    padding-top: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.music-playlist ul{
+    /* border: 1px solid white; */
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.music-playlist ul li {
+    margin-top: 5px;
+    list-style-type: decimal;
+    padding: 2px;
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    padding: 0 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+.music-playlist ul li img{
+    width: 20px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.left-text-footer{
+    /* border: 1px solid white; */
+    padding: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 0;
+    display: flex;
+    gap: 8px;
+    width: 320px;
+    flex-wrap: wrap;
+    margin-left: 11px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 60px;
+}
+.left-text-footer a {
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+}
+.right-header{
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right : 15px;
+}
+#hamburger{
+    font-size: 40px;
+    display: block;
+}
+.arrows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-arrow{
+    cursor: pointer;
+    width: 20px;
+}
+.right-arrow{
+    width: 20px;
+    cursor: pointer;
+}
+.log-btn{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 250px; */
+    gap: 20px;
+    cursor: pointer;
+}
+#sign-up{
+    background:none;
+    color: rgb(187, 181, 181);
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+#log-in{
+    border-radius: 20px; 
+    width: 85px;
+    padding :8px ;
+    font-weight: 600;
+    cursor: pointer;
+}
+.right-playlist{
+    background-color: rgb(41, 40, 40);
+   padding: 8px;
+   /* background-color: red; */
+   /* display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between; */
+}
+.play-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 3px;
+    padding-top: 0;
+}
+.play-text h2{
+    font-size: 20px; 
+}
+
+.card-img-songs{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+   justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; 
+    overflow-y: scroll;
+}
+.card-ka-baap{
+   border: 2px solid black;
+   padding: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 25px;
+   width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
+a:hover{
+    color: rgb(156, 154, 154);
+    transition: all 0.5s ease-in;
+    content:icon;
+}
+.card{
+    width: 173px;
+    position: relative;
+    cursor: pointer;
+    /* background-color: yellow; */
+    /* height: 240px; */
+}
+.card img {
+    height: 160px;
+    width: 170px;
+    border-radius: 8px;
+    /* object-fit: cover; */
+    /* position: absolute; */
+    /* position: -100% -100%; */
+
+}
+.card h2{
+    text-transform: uppercase;
+    margin-top: 3px;
+    
+}
+.card p{
+    text-transform: capitalize;    
+    margin-top: 5px;
+    color: rgb(170, 167, 167);
+}
+.overlay-play-icon{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50%;
+    position: absolute;
+    bottom: 80px;
+    left: 115px;
+    opacity: 0;
+    transition: all 0.70s ease-in;
+    
+}
+.overlay-play-icon img{
+    color: black;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+.card:hover{
+    .overlay-play-icon{
+        opacity: 1;
+    }
+    }
+
+/* .playbar-ka-baap{
+    background-color: yellow;
+    width: 100%;
+    height: 300px;
+    position: fixed;
+} */
+
+.playbar{
+    background-color: rgb(170, 168, 168);
+    border-radius: 6px;
+    position: fixed;
+    bottom: 0;
+    width: 70vw;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    gap: 20px;
+    /* margin-top: 10px; */
+}
+.previews{
+    background-color: red;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+.previews:active{
+    transform: scale(1.2);
+}
+.play{
+    background-color: red;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+.play:active{
+    transform: scale(1.2);
+}
+.next{
+    background-color: red;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+    /* font-size: 30px;  */
+}
+.next:active{
+    transform: scale(1.2);
+}
+.seekbar{
+    /* border: 2px solid green; */
+    background: green;
+    height: 8px;
+    border-radius: 10px;
+    width: 99%;
+    position: absolute;
+    bottom: 8px;
+    cursor: pointer;
+    z-index: 1;
+}
+.circal{
+     width: 15px;
+     height: 15px;
+     border-radius: 15px;
+     background-color: aqua;
+     /* bottom: 0px; */
+     top: -3px;
+     border: 1px solid black;
+     position:absolute;
+     margin-bottom: 15px;
+     transition: 0.5s ;
+}
+.time-duration-wala{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 100%;
+    padding: 0px 15px;
+    padding-top: 4px;
+}
+.songinfo,.songtime{
+    color: black;
+    font-weight: 800;
+}
+.songtime{
+    padding: 5px 8px;
+
+}
+.songinfo{
+    /* border: 1px solid red; */
+    width: 280px;
+    height: auto;
+    padding-left: 4px;
+}
+
+/* #hamburger-ka-bhai{
+    display: none;
+}
+@media (max-width:1300px) {
+    #hamburger{
+        font-size: 60px;
+        display: block;
+        cursor: pointer;
+    }
+} */
+
+@media (max-width:1310px) {
+    .left{
+        /* background-color: red; */
+        position: absolute;
+        left: -100%;
+        transition: all  0.9s ease-out;
+        z-index: 1;
+        height: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .playbar{
+        width: 99vw;
+        margin-left: 3px;
+        height: 70px;
+        padding-top: 0;
+    }
+    /* .player{
+     border: 1px solid black;
+     width: 200px;
+    } */
+    /* .time-duration-wala{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        width: 100%;
+        padding: 0px 15px;
+        /* padding-top: 4px; */
+    } */
+    .seekbar{
+        margin-bottom: 8px;
+    }
+    #hamburger{
+        width: 50px;
+        display: none;
+        cursor: pointer;
+    }
+    .log-btn{
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        width: 150px;
+    }
+    #close{
+        width: 45px;
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        cursor: pointer;
+        /* display: block; */
+        visibility: visible;
+        transition: all 1.1s ease-in-out;
+    }
+    
+@media (max-width:605px) {
+    .songtime{
+        position:absolute;
+        top: 0px;
+        left: 225px;
+        background-color: red;
+        color: white;
+        border-radius: 20px;
+        /* z-index: 0; */
+    }
+    #hamburger{
+        width: 50px;
+        display:block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:1310px) {
+    #hamburger{
+        width: 50px;
+        display:block;
+        cursor: pointer;
+    }
+    #close{
+        width: 45px;
+        right: 15px;
+        transition: all 1.1s ease-in-out;
+        display: block;
+    }
+}
+
+
+@media (max-width:345px) {
+    .log-btn{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-between;
+        width: 130px;
+    }
+    #sign-up{
+        background:none;
+        color: rgb(187, 181, 181);
+        outline: none;
+        border: none;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    #log-in{
+        border-radius: 20px; 
+        width: 60px;
+        padding :4px ;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:1140px) {
+    .playbar{
+        width: 98%;
+        
+    }
+}
+
+@media (max-width:415px) {
+    .aage-piche{
+        /* border: 1px solid aqua; */
+        margin-left: 20px;
+    }
+    .left-arrow{
+        cursor: pointer;
+        width: 30px;
+    }
+    .right-arrow{
+        width: 30px;
+        cursor: pointer;
+    }
+    #hamburger{
+        width: 40px;
+        display: block;
+        cursor: pointer;
+    }
+}
+@media (max-width:390px){
+    .left{
+        position: absolute;
+        left: -300%;
+        width: 350px;
+    }
+}
+
+@media (max-width:365px){
+    .left{
+        position: absolute;
+        left: -300%;
+        width: 350px;
+    }
+}
+@media (max-width:325px){
+    .right{
+        width: 100%;
+        /* background-color: red; */
+    }
+    .right-playlist{
+        width: 100%;
+        /* background-color: red; */
+    }
+}
+@media (max-width:390px){
+    .playbar{
+        width: 97%;
+        /* margin-right: 20px; */
+    }
+    .seekbar{
+        width: 93%;
+    }
+}
+@media (max-width:414px){
+    .card-img-songs{
+        width: 100%;
+        /* padding: 10px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px; 
+        overflow-y: scroll;
+        max-height: 70vh;
+        /* margin-left: 10px; */
+    }
+    .card{
+        width: 100%;
+        position: relative;
+        /* background-color: red; */
+        /* padding: 3px 5px; */
+    }
+    .card img {
+        height: 100%;
+        width: 310px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-left: 3px;
+        position: -100% -100%;
+    
+    }
+    .card h2{
+        text-transform: uppercase;
+        margin-top: 3px;
+        /* border: 1px solid gray; */
+    }
+    .card p{
+        text-transform: capitalize;    
+        margin-top: 5px;
+        color: rgb(170, 167, 167);
+    }
+    .overlay-play-icon{
+        /* background-color: green; */
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:50%;
+        position: absolute;
+        bottom: 80px;
+        left: 240px;
+        opacity: 0;
+        transition: all 0.70s ease-in;
+        
+    }
+    .overlay-play-icon img{
+        color: white;
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width:398px){
+    .card{
+        width: 100%;
+        position: relative;
+        /* background-color: red; */
+        /* padding: 3px 5px; */
+    }
+    .card img {
+        height: 100%;
+        width: 310px;
+        border-radius: 15px;
+        object-fit: cover;
+        margin-left: 8px;
+        position: -100% -100%;
+    
+    }
+} 
+@media (max-width:400px) {
+    .volume{
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 20px;
+        left: 185px;
+    }
+    #volume-percentages{
+        position: absolute;
+        bottom: 28px;
+        left: 5px;
+        
+    }
+}
+
+.volume{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    /* width: 30px;
+    height: 30px; */
+}
+.volume img{
+    width: 30px;
+    background: black;
+    border-radius: 50%;
+}
+.valume input{
+    margin-bottom: 30px;
+    color: orange;
+}
+.volume{
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
+    background-color: orange;
+    color: orange;
+}
